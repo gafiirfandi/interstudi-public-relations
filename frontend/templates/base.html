@@ -16,7 +16,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="icon" href="{% static 'img/logo_interstudi.png' %}">
+    <link rel="icon" href="{% static 'img/logo_interstudi.png' %}" />
 
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="{% static 'css/index.css' %}" />
@@ -43,12 +43,18 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"
-              >Tentang Pengajar</a
-            >
+            <a class="nav-link" href="#">Tentang Pengajar</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
               Event
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -66,14 +72,10 @@
             <a class="nav-link" href="#">Artikel</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"
-              >Pendaftaran Online</a
-            >
+            <a class="nav-link" href="#">Pendaftaran Online</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"
-              >Program Lainnya</a
-            >
+            <a class="nav-link" href="#">Program Lainnya</a>
           </li>
         </ul>
       </div>
@@ -85,7 +87,10 @@
       class="page-footer font-small mdb-color lighten-3 pt-4 footer-index"
     >
       <!-- Footer Links -->
-      <div class="container text-center text-md-left" style="margin-bottom: 0px;">
+      <div
+        class="container text-center text-md-left"
+        style="margin-bottom: 0px"
+      >
         <!-- Grid row -->
         <div class="row">
           <!-- Grid column -->
@@ -196,19 +201,18 @@
       crossorigin="anonymous"
     ></script>
     <script>
-
       const isMobile = navigator.userAgentData.mobile;
 
-      console.log(isMobile)
+      console.log(isMobile);
 
-      if(isMobile) {
+      if (isMobile) {
         $(".navbar").addClass("colored");
         $(".nav-link").addClass("colored-link");
       }
 
       $(function () {
         $(window).on("scroll", function () {
-          if(!isMobile) {
+          if (!isMobile) {
             if ($(window).scrollTop() > 10) {
               $(".navbar").addClass("colored");
               $(".nav-link").addClass("colored-link");

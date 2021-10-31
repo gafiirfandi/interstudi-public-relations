@@ -35,7 +35,7 @@ html {
 }
 
 .colored {
-  background-color: #ac2931;
+  background-color: #ffba02;
   transition: 0.1s ease-in;
 }
 
@@ -49,7 +49,7 @@ html {
 }
 
 .footer-index {
-  background-color: #670806;
+  background-color: #ffbb02;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   color: white;
@@ -61,53 +61,67 @@ html {
 .main-div {
   position: relative;
 
-  padding-top: 75px;
-  padding-bottom: 90px;
-
-  /* border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px; */
-
-  /* background-image: url("../img/background-base.png"); */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/background-base.png");
+  background-color: #ffffff;
+  background-repeat: no-repeat;
   background-size: cover;
   height: auto;
-  background-repeat: no-repeat;
 }
 
 .title-div {
+  border-radius: 0px 0px 400px 0px;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(226, 217, 217, 0.5)
+    ),
+    url("../img/meeting.jpg");
+  background-size: cover;
+  height: auto;
+  background-repeat: no-repeat;
+
   margin-left: auto;
   margin-right: auto;
   width: 100%;
   height: 100%;
 }
+.konten-main {
+  padding: 200px 5%;
+
+  width: 65%;
+  background-color: #ffba02;
+  border-radius: 0px 400px 0px 0px;
+}
+.div-buttonawal {
+  text-align: left;
+}
 
 .title-inner {
   margin: auto;
-  width: 70%;
+
   display: flex;
   color: white;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: left;
+  text-align: left;
 }
 
 .button-explore {
   padding: 10px 40px;
-  background-color: #fb1f1f;
+  background-color: #ffba02;
 }
 .button3 {
-  background-color: #fb1f1f;
-  color: #fafafa;
+  background-color: #ffffff;
+  color: #ffba02;
   border-radius: 40px;
-  padding: 5px 20px;
-  border: 2px solid #f44336;
+  padding: 6px 50px;
+  border: 2px solid #ffffff;
   transition: 0.3s ease-in-out;
+  font-size: 17px;
+  font-weight: 700;
 }
 
 .button3:hover {
   background-color: transparent;
-  color: #f44336;
+  color: #ffffff;
   transition: 0.3s ease-in-out;
 }
 
@@ -125,12 +139,13 @@ html {
   width: 5%;
 }
 .title-design {
-  align-items: center;
+  align-items: left;
 }
 .content-title-design {
-  text-align: right;
+  text-align: left;
   line-height: 0.7;
-  font-size: 70px;
+  font-size: 55px;
+  font-weight: bold;
 }
 
 .detail-main-div {
@@ -138,73 +153,121 @@ html {
   width: 70%;
 }
 
-.scroll-down {
-  background-color: #dc2e37;
-  height: 120px;
-  text-align: center;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
-  box-shadow: 2px 18px 13px 5px rgba(0, 0, 0, 0.22);
-}
-.content-scroll-down {
-  padding-top: 30px;
-  color: white;
-  font-size: 35px;
-}
-
-/* Section Pengajar */
-
-.about-pengajar {
-  margin-top: 20px;
-}
-.about-left {
-  margin-right: 0px !important;
-}
-.image-pengajar {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+/* Section 2 Tujuan Utama */
+.tujuan-utama {
+  margin: auto;
+  margin-top: 50px;
   width: 70%;
+
+  padding: 10px;
+}
+.garis-orange {
+  border-bottom: 5px solid #fcc34a;
 }
 
-.about-right {
-  margin-top: 70px;
-  margin-left: -40px;
-  color: #ffc5c4;
+.garis-orange-card {
+  margin: auto;
+  border-bottom: 5px solid #fcc34a;
+  width: 130px;
+  margin-bottom: 20px;
 }
-
-.row-content-profile {
-  display: flex;
-  width: 120% !important;
+.text-tugasutama {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
 }
-
-.nama-pengajar {
-  color: #eb0f28;
-  font-weight: 1000;
+.card-jumlah-card {
+  text-align: center;
+  margin-top: 40px;
+  padding-bottom: 20px;
+  width: 200px;
+  height: auto;
+  box-shadow: 2px 15px 13px 5px rgba(0, 0, 0, 0.22);
+  background-image: linear-gradient(
+    140deg,
+    #fefefe 0%,
+    #f7ebef 50%,
+    #efefef 75%
+  );
+  border-radius: 20px;
+}
+.konten-card {
+  padding-top: 30px;
+}
+.text-jenis-program {
+  font-weight: bolder;
+  line-height: 0.4;
+}
+.text-jumlah-total-program {
   font-size: 45px;
+  letter-spacing: 6px;
+  font-weight: bolder;
+  color: #f4b61e;
+  line-height: 1;
 }
-.role-pengajar {
-  color: #eb0f28;
+/* Section 2 Tujuan Utama */
+
+/* section 3 Profile*/
+#wrapper {
+  margin-top: 50px;
+  background-color: #f4b61e;
+  overflow: auto;
+  height: 500px;
+  color: white;
 }
 
-.deskripsi-pengajar {
-  color: #111111;
+#c1 {
+  float: left;
+  /* background: blue; */
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(226, 217, 217, 0.5)
+    ),
+    url("../img/meeting.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 45%;
+  border-radius: 0px 400px 0px 0px;
+  height: 500px;
 }
-.angka-content-pengajar {
-  color: #111111;
-}
-.row-content-profile {
-  color: #111111;
-}
-.jenis-angka-content-pengajar {
-  margin-top: 22px;
-  margin-left: 8px;
+.konten-profile {
+  margin-top: 10%;
 }
 
-/* section Materi Design */
+#c2 {
+  background: transparent;
+  float: right;
+  height: 500px;
+  z-index: -1;
+  width: 50%;
+}
+.title-Profile {
+  font-size: 45px;
+  font-weight: bolder;
+  line-height: 0.7;
+}
+.text-title-prof {
+  margin-bottom: 30px;
+}
+.subtittle-profile {
+  font-size: 22px;
+  font-weight: bolder;
+}
+
+.visi,
+.misi {
+  line-height: 0.5;
+}
+.moto {
+  line-height: 0.5;
+}
+
+/* section 3 Profile*/
+
+/* section Daftar Harga*/
 .materi-tittle-inner {
   margin: auto;
-  width: 250px;
+  width: auto;
   display: flex;
   color: white;
   flex-direction: column;
@@ -216,95 +279,25 @@ html {
   color: white;
 }
 .content-materi-design {
-  color: #eb0f28;
+  color: #f7ba22;
   text-align: center;
   line-height: 0.7;
-  font-size: 50px;
-  font-weight: 1000;
-}
-.content-materi-design-2 {
-  color: #eb0f28;
-  text-align: right !important;
-  line-height: 0.7;
-  font-size: 50px;
+  font-size: 45px;
   font-weight: 1000;
 }
 
-/* section konten materi design  */
-.isi-materi-design {
-  margin-top: 20px;
-  color: white;
-
-  height: auto;
-  position: relative;
-
-  background-image: url("../img/image-adji.png");
-  background-size: cover;
-  height: auto;
-  background-repeat: no-repeat;
-}
-
-.card-madetdes {
-  width: auto;
-  height: auto;
-  margin: 0 auto;
-  padding: 10px;
-  position: relative;
-  background-color: #eb0f28;
-  border-radius: 20px;
-  width: 240px;
-  height: 370px;
-  padding-bottom: 40px;
-  margin-top: 30px;
-  margin-bottom: 50px;
-  text-align: center;
-  box-shadow: -1px 3px 28px 4px rgba(0, 0, 0, 0.2);
-  transition: all 0.4s ease-in-out;
-}
-
-.card-madetdes:hover {
-  transform: translateY(-15px);
-  transition: all 0.4s ease-in-out;
-  box-shadow: -1px 3px 28px 4px rgba(125, 10, 10, 0.62);
-}
-
-.circle-icon {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.circle-div {
-  display: flex;
-  width: 120px;
-  height: 120px;
-  background-color: white;
-  border-radius: 50%;
-  margin: auto;
-  align-items: center;
-}
-
-.title-card-matdes {
-  margin-top: 10px;
-  font-weight: bold;
-  font-size: 20px;
-}
-.isi-card-matdes {
-  font-size: 14px;
-}
+/* card daftar harga  */
 
 .daftar-harga {
   height: auto;
 }
-
-/* card daftar harga  */
 .column-card-harga {
   width: auto;
   height: auto;
   margin: 0 auto;
   padding: 10px;
   position: relative;
-  background-image: linear-gradient(to bottom, #ff0522, #a7242c);
+  background-color: #f7b517;
   color: white;
   border-radius: 20px;
   width: 300px;
@@ -315,41 +308,37 @@ html {
   text-align: center;
   box-shadow: -1px 3px 28px 4px rgba(0, 0, 0, 0.2);
   transition: all 0.4s ease-in-out;
+  font-weight: bolder;
 }
 
 .column-card-harga:hover {
   transform: translateY(-15px);
   transition: all 0.4s ease-in-out;
-  box-shadow: -1px 3px 28px 4px rgba(125, 10, 10, 0.62);
-}
-
-.dotindex {
-  margin-top: 20px;
-  height: 40px;
-  width: 40px;
-  background-color: #941e24;
-  border-radius: 50%;
-  display: inline-block;
+  box-shadow: -1px 3px 28px 4px rgba(235, 224, 81, 0.62);
 }
 
 .title-card-harga {
   margin-top: 10px;
   font-size: 20px;
+  line-height: 0.5;
 }
 
 .fix-harga {
-  font-weight: bold;
   font-size: 27px;
   text-decoration: underline solid rgb(255, 255, 255);
-  font-weight: bold;
+  font-weight: bolder;
+  line-height: 0.5;
 }
 
 .isi-jenis-tunai {
   margin-bottom: 0;
+  line-height: 0.5;
+  font-weight: bolder;
 }
 
 .isi-jenis-tunai-2 {
   margin-bottom: 10px;
+  font-weight: bolder;
 }
 
 .garis {
@@ -363,40 +352,48 @@ html {
   font-weight: bold;
   font-size: 25px;
   color: #ffffff;
+  font-weight: bolder;
 }
 
 .bayar-angsuran {
   margin-bottom: 0;
   font-weight: 600;
+  font-weight: bolder;
 }
 
 .total-bayar {
   margin-top: 10px;
   font-style: italic;
+  font-weight: bolder;
 }
 
 .detail-angsuran {
   font-style: italic;
   text-decoration: underline solid rgb(255, 255, 255);
+  line-height: 0.7;
+  font-weight: bolder;
 }
 
+/* section maps  */
 .maps {
   margin-top: 100px;
   align-content: center;
 }
 .map-interstudi {
-  width: 50%;
-  height: 450px;
+  width: 60%;
+  height: 250px;
   display: block;
   margin: 0 auto;
   background-color: #777;
 }
-
+/* section maps  */
 @media (max-width: 1200px) {
   /* section pertama */
   /* .indexpage {
     height: 900vh !important;
   } */
+
+  /* Section 1  */
   .main-div {
     height: 400px;
   }
@@ -406,118 +403,165 @@ html {
   }
 
   .detail-main-div {
-    text-align: justify;
-    margin-top: 30px;
-    width: 120%;
-  }
-  /* pembatas */
-  .content-scroll-down {
-    padding-top: 16px;
-    color: white;
-    font-size: 23px;
-  }
-  .scroll-down {
-    background-color: #dc2e37;
-    height: 80px;
     text-align: center;
+    margin-top: 30px;
+    width: 100%;
   }
-  .logo-scroll {
-    width: 30px !important;
-    height: 30px !important;
+  .title-div {
+    border-radius: 0px 0px 0px 0px;
+    background-size: cover;
+    height: auto;
+    background-repeat: no-repeat;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
   }
+  .konten-main {
+    border-radius: 0px 0px 0px 0px;
+    padding: 200px 5%;
+
+    width: 100%;
+    background-color: transparent;
+  }
+  .div-buttonawal {
+    text-align: center;
+    margin-top: -10px;
+  }
+
+  /* Section 1  */
 
   /* section 2  */
-  .about-pengajar {
+  .tujuan-utama {
+    margin-top: 70px;
+  }
+  .card-col-total {
+    text-align: center;
+    margin: auto;
+  }
+  .card-jumlah-card {
+    justify-content: center;
+    text-align: center;
+    margin: auto;
     margin-top: 40px;
+    padding-bottom: 20px;
+    width: 200px;
+    height: auto;
+    box-shadow: 2px 15px 13px 5px rgba(0, 0, 0, 0.22);
+    background-image: linear-gradient(
+      140deg,
+      #fefefe 0%,
+      #f7ebef 50%,
+      #efefef 75%
+    );
+    border-radius: 20px;
   }
-  .about-left {
-    margin-right: 0px !important;
+  /* section 2  */
+
+  /* section 3  */
+  #wrapper {
+    margin-top: 50px;
+    background-color: #f4b61e;
+    overflow: auto;
+    height: 500px;
+    color: white;
   }
-  .image-pengajar {
+  #c1 {
+    float: left;
+
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(226, 217, 217, 0.5)
+      ),
+      url("../img/meeting.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 45%;
+    border-radius: 0px 400px 0px 0px;
+    height: 500px;
+  }
+  .konten-profile {
+    margin-top: 10%;
+  }
+
+  #c2 {
+    background: transparent;
+    float: right;
+    height: 500px;
+    z-index: -1;
     width: 50%;
   }
-
-  .about-right {
-    margin-top: 50px;
-    margin-left: 0px;
-    color: #ffc5c4;
+  .title-Profile {
+    font-size: 45px;
+    font-weight: bolder;
+    line-height: 0.7;
   }
-  .nama-pengajar {
-    font-size: 35px;
+  .text-title-prof {
+    margin-bottom: 30px;
   }
-  .role-pengajar {
-    font-size: 27px;
+  .subtittle-profile {
+    font-size: 22px;
+    font-weight: bolder;
   }
-
-  .deskripsi-pengajar {
-    font-size: 14px;
-    text-align: justify;
-  }
-
-  .row-content-profile {
-    text-align: center !important;
+  /* section 3  */
+  /* section Daftar Harga*/
+  .materi-tittle-inner {
+    margin: auto;
+    width: auto;
     display: flex;
-    width: 50% !important;
+    color: white;
+    flex-direction: column;
+    text-align: center;
   }
-
-  .angka-content-pengajar {
-    font-size: 35px;
-  }
-  .jenis-angka-content-pengajar {
-    font-size: 12px;
-  }
-  /* Section 3  */
   .title-materi-design {
-    margin-top: 50px !important;
+    margin-top: 80px;
+
     color: white;
   }
   .content-materi-design {
+    color: #f7ba22;
     text-align: center;
-    line-height: 1.2;
-    font-size: 45px;
-  }
-  .content-materi-design-2 {
-    text-align: center !important;
     line-height: 0.7;
     font-size: 45px;
+    font-weight: 1000;
   }
-  /* Bagian card  */
-  .isi-card-matdes {
-    font-size: 14px;
-  }
+  /* section Daftar Harga*/
 
-  /* Section 3  */
-  .column-card-harga {
-    border-radius: 20px;
-    width: 240px;
+  /* card daftar harga  */
+  .daftar-harga {
+    height: auto;
   }
-  .dotindex {
-    margin-top: 20px;
-    height: 30px;
-    width: 30px;
-    background-color: #941e24;
-    border-radius: 50%;
-    display: inline-block;
+  .column-card-harga {
+    width: 300px;
+    height: auto;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 
   .title-card-harga {
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 0.5;
   }
 
   .fix-harga {
-    font-weight: bold;
-    font-size: 25px;
+    font-size: 27px;
     text-decoration: underline solid rgb(255, 255, 255);
-    font-weight: bold;
+    font-weight: bolder;
+    line-height: 0.5;
   }
 
   .isi-jenis-tunai {
     margin-bottom: 0;
+    line-height: 0.5;
+    font-weight: bolder;
   }
 
   .isi-jenis-tunai-2 {
     margin-bottom: 10px;
+    font-weight: bolder;
   }
 
   .garis {
@@ -529,47 +573,50 @@ html {
   .detailhargadiskon {
     color: black;
     font-weight: bold;
-    font-size: 23px;
+    font-size: 25px;
     color: #ffffff;
+    font-weight: bolder;
   }
 
   .bayar-angsuran {
     margin-bottom: 0;
     font-weight: 600;
+    font-weight: bolder;
   }
 
   .total-bayar {
     margin-top: 10px;
     font-style: italic;
+    font-weight: bolder;
   }
 
   .detail-angsuran {
-    font-size: 17px;
     font-style: italic;
     text-decoration: underline solid rgb(255, 255, 255);
+    line-height: 0.7;
+    font-weight: bolder;
   }
-
   /* section maps  */
   .maps {
-    margin-top: 10px;
+    margin-top: 100px;
     align-content: center;
   }
   .map-interstudi {
-    width: 70%;
-    height: 300px;
+    width: 60%;
+    height: 250px;
     display: block;
     margin: 0 auto;
     background-color: #777;
   }
+  /* section maps  */
 }
 
 @media (max-width: 800px) {
   /* section pertama */
-  /* .indexpage {
-    height: 1370vh !important;
-  } */
+
+  /* Section 1  */
   .main-div {
-    height: 450px;
+    height: 400px;
   }
   .content-title-design {
     text-align: center;
@@ -577,118 +624,155 @@ html {
   }
 
   .detail-main-div {
-    text-align: justify;
-    margin-top: 30px;
-    width: 120%;
-  }
-  /* pembatas */
-  .content-scroll-down {
-    padding-top: 16px;
-    color: white;
-    font-size: 23px;
-  }
-  .scroll-down {
-    background-color: #dc2e37;
-    height: 80px;
     text-align: center;
+    margin-top: 30px;
+    width: 100%;
   }
-  .logo-scroll {
-    width: 30px !important;
-    height: 30px !important;
+  .title-div {
+    border-radius: 0px 0px 0px 0px;
+    background-size: cover;
+    height: auto;
+    background-repeat: no-repeat;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 110%;
   }
+  .konten-main {
+    border-radius: 0px 0px 0px 0px;
+    padding: 200px 5%;
+
+    width: 100%;
+    background-color: transparent;
+  }
+  .div-buttonawal {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  /* Section 1  */
 
   /* section 2  */
-  .about-pengajar {
+  .tujuan-utama {
+    margin-top: 70px;
+  }
+  .card-col-total {
+    text-align: center;
+    margin: auto;
+  }
+  .card-jumlah-card {
+    justify-content: center;
+    text-align: center;
+    margin: auto;
     margin-top: 40px;
+    padding-bottom: 20px;
+    width: 200px;
+    height: auto;
+    box-shadow: 2px 15px 13px 5px rgba(0, 0, 0, 0.22);
+    background-image: linear-gradient(
+      140deg,
+      #fefefe 0%,
+      #f7ebef 50%,
+      #efefef 75%
+    );
+    border-radius: 20px;
   }
-  .about-left {
-    margin-right: 0px !important;
-  }
-  .image-pengajar {
-    width: 50%;
-  }
+  /* section 2  */
 
-  .about-right {
+  /* section 3  */
+  #wrapper {
     margin-top: 50px;
-    margin-left: 0px;
-    color: #ffc5c4;
+    background-color: #f4b61e;
+    overflow: auto;
+    height: 500px;
+    color: white;
   }
-  .nama-pengajar {
-    font-size: 35px;
+  #c1 {
+    width: 0%;
   }
-  .role-pengajar {
-    font-size: 27px;
-  }
-
-  .deskripsi-pengajar {
-    font-size: 14px;
-    text-align: justify;
+  .konten-profile {
+    margin-top: 10%;
   }
 
-  .row-content-profile {
-    text-align: center !important;
+  #c2 {
+    background: transparent;
+    float: center !important;
+    text-align: center;
+    height: 500px;
+    z-index: 11;
+    width: 100%;
+  }
+  .title-Profile {
+    font-size: 45px;
+    font-weight: bolder;
+    line-height: 0.7;
+  }
+  .text-title-prof {
+    margin-bottom: 30px;
+  }
+  .subtittle-profile {
+    font-size: 22px;
+    font-weight: bolder;
+  }
+  /* section 3  */
+  /* section Daftar Harga*/
+  .materi-tittle-inner {
+    margin: auto;
+    width: auto;
     display: flex;
-    width: 50% !important;
+    color: white;
+    flex-direction: column;
+    text-align: center;
   }
-
-  .angka-content-pengajar {
-    font-size: 35px;
-  }
-  .jenis-angka-content-pengajar {
-    font-size: 12px;
-  }
-  /* Section 3  */
   .title-materi-design {
-    margin-top: 50px !important;
+    margin-top: 80px;
+
     color: white;
   }
   .content-materi-design {
+    color: #f7ba22;
     text-align: center;
-    line-height: 1.2;
-    font-size: 45px;
-  }
-  .content-materi-design-2 {
-    text-align: center !important;
     line-height: 0.7;
     font-size: 45px;
+    font-weight: 1000;
   }
-  /* Bagian card  */
-  .isi-card-matdes {
-    font-size: 14px;
-  }
+  /* section Daftar Harga*/
 
-  /* Section 3  */
-  .column-card-harga {
-    border-radius: 20px;
-    width: 240px;
+  /* card daftar harga  */
+  .daftar-harga {
+    height: auto;
   }
-  .dotindex {
-    margin-top: 20px;
-    height: 30px;
-    width: 30px;
-    background-color: #941e24;
-    border-radius: 50%;
-    display: inline-block;
+  .column-card-harga {
+    width: 300px;
+    height: auto;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 
   .title-card-harga {
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 0.5;
   }
 
   .fix-harga {
-    font-weight: bold;
-    font-size: 25px;
+    font-size: 27px;
     text-decoration: underline solid rgb(255, 255, 255);
-    font-weight: bold;
+    font-weight: bolder;
+    line-height: 0.5;
   }
 
   .isi-jenis-tunai {
     margin-bottom: 0;
+    line-height: 0.5;
+    font-weight: bolder;
   }
 
   .isi-jenis-tunai-2 {
     margin-bottom: 10px;
+    font-weight: bolder;
   }
 
   .garis {
@@ -700,203 +784,80 @@ html {
   .detailhargadiskon {
     color: black;
     font-weight: bold;
-    font-size: 23px;
+    font-size: 25px;
     color: #ffffff;
+    font-weight: bolder;
   }
 
   .bayar-angsuran {
     margin-bottom: 0;
     font-weight: 600;
+    font-weight: bolder;
   }
 
   .total-bayar {
     margin-top: 10px;
     font-style: italic;
+    font-weight: bolder;
   }
 
   .detail-angsuran {
-    font-size: 17px;
     font-style: italic;
     text-decoration: underline solid rgb(255, 255, 255);
+    line-height: 0.7;
+    font-weight: bolder;
   }
-
   /* section maps  */
   .maps {
-    margin-top: 10px;
+    margin-top: 100px;
     align-content: center;
   }
   .map-interstudi {
-    width: 70%;
-    height: 300px;
+    width: 60%;
+    height: 250px;
     display: block;
     margin: 0 auto;
     background-color: #777;
   }
+  /* section maps  */
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   /* section pertama */
+
+  /* Section 1  */
   .main-div {
-    height: 430px;
+    height: auto;
   }
   .content-title-design {
     text-align: center;
-    font-size: 45px;
+    font-size: 38px;
+    line-height: 1;
   }
 
   .detail-main-div {
-    text-align: justify;
+    text-align: center;
     margin-top: 30px;
-    width: 120%;
+    width: 100%;
   }
-  /* pembatas */
-  .content-scroll-down {
-    padding-top: 10px;
-    color: white;
-    font-size: 20px;
-  }
-  .scroll-down {
-    background-color: #dc2e37;
-    height: 80px;
-    text-align: center;
-  }
-  .logo-scroll {
-    width: 36px !important;
-    height: 36px !important;
-  }
+  .title-div {
+    border-radius: 0px 0px 0px 0px;
+    background-size: cover;
+    height: auto;
+    background-repeat: no-repeat;
 
-  /* Section 2  */
-  .about-pengajar {
-    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 150%;
   }
-  .about-left {
-    margin-right: 0px !important;
+}
+@media (max-width: 380px) {
+  #c2 {
+    height: auto !important;
   }
-  .image-pengajar {
-    width: 60%;
+  #wrapper {
+    height: auto;
   }
-
-  .about-right {
-    margin-top: 50px;
-    margin-left: 0px;
-    color: #ffc5c4;
-  }
-  .nama-pengajar {
-    font-size: 30px;
-  }
-  .role-pengajar {
-    font-size: 22px;
-  }
-
-  .deskripsi-pengajar {
-    font-size: 12px;
-    text-align: justify;
-  }
-
-  .row-content-profile {
-    text-align: center !important;
-    display: flex;
-    width: 50% !important;
-  }
-
-  .angka-content-pengajar {
-    font-size: 30px;
-  }
-  .jenis-angka-content-pengajar {
-    font-size: 12px;
-  }
-
-  /* Section 3  */
-  .title-materi-design {
-    margin-top: 50px !important;
-    color: white;
-  }
-  .content-materi-design {
-    text-align: center;
-    line-height: 1.2;
-    font-size: 45px;
-  }
-  .content-materi-design-2 {
-    text-align: center !important;
-    line-height: 0.7;
-    font-size: 45px;
-  }
-  /* Bagian card  */
-  .isi-card-matdes {
-    font-size: 14px;
-  }
-
-  /* Section 3  */
-  .column-card-harga {
-    border-radius: 20px;
-    width: 240px;
-  }
-  .dotindex {
-    margin-top: 20px;
-    height: 30px;
-    width: 30px;
-    background-color: #941e24;
-    border-radius: 50%;
-    display: inline-block;
-  }
-
-  .title-card-harga {
-    margin-top: 10px;
-    font-size: 15px;
-  }
-
-  .fix-harga {
-    font-weight: bold;
-    font-size: 22px;
-    text-decoration: underline solid rgb(255, 255, 255);
-    font-weight: bold;
-  }
-
-  .isi-jenis-tunai {
-    margin-bottom: 0;
-  }
-
-  .isi-jenis-tunai-2 {
-    margin-bottom: 10px;
-  }
-
-  .garis {
-    border: 1px solid #ffffff;
-    margin-bottom: 0;
-    margin-top: 0;
-    width: 65%;
-  }
-  .detailhargadiskon {
-    color: black;
-    font-weight: bold;
-    font-size: 20px;
-    color: #ffffff;
-  }
-
-  .bayar-angsuran {
-    margin-bottom: 0;
-    font-weight: 600;
-  }
-
-  .total-bayar {
-    margin-top: 10px;
-    font-style: italic;
-  }
-
-  .detail-angsuran {
-    font-size: 14px;
-    font-style: italic;
-    text-decoration: underline solid rgb(255, 255, 255);
-  }
-  .maps {
-    margin-top: 10px;
-    align-content: center;
-  }
-  .map-interstudi {
-    width: 250px;
-    height: 350px;
-    display: block;
-    margin: 0 auto;
-    background-color: #777;
-  }
+  /* section maps  */
 }
